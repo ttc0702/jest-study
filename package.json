@@ -1,0 +1,25 @@
+{
+  "name": "jest-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "math.js",
+  "scripts": {
+    "jest": "jest --watchAll",
+    "cv": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttc0702/jest-study.git"
+  },
+  "author": "ttc0702",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttc0702/jest-study/issues"
+  },
+  "homepage": "https://github.com/ttc0702/jest-study#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "jest": "^26.6.3"
+  }
+}
