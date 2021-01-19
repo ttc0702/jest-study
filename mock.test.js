@@ -1,6 +1,7 @@
 import axios from 'axios'
-import { runCallback, getData } from './demo'
-jest.mock('axios')
+import { runCallback, getData } from './mock'
+// jest.mock('axios')
+jest.mock('./mock')
 
 test('测试 runCallback', () => {
   const func = jest.fn(x => x)
@@ -17,7 +18,12 @@ test('测试 getData', async () => {
   expect(res.data).toBe('hello')
 })
 
-test.only('测试 runCallback', () => {
+test.only('测试 getData', async () => {
+  const res = await getData()
+  expect(res.data).toBe('hello')
+})
+
+test('测试 runCallback', () => {
   const func = jest.fn()
   func.mockImplementationOnce(x => x)
   func.mockImplementationOnce(x => x * 2)
