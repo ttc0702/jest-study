@@ -4,7 +4,8 @@
   "description": "",
   "main": "math.js",
   "scripts": {
-    "jest": "jest --watchAll",
+    "jest": "jest --watch",
+    "all": "jest --watchAll",
     "cv": "jest --coverage"
   },
   "repository": {
@@ -21,5 +22,8 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
